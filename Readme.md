@@ -15,10 +15,17 @@
 
 ## || Day02 || ||
 
-## || Day02 || ||
+## || Day03 || javascript Interview questions tips ||
+#### Important concept that asked in js 
+- set Time out
+- placement of js files
+- var let and const difference
+- closures
+- functional programming
+- this keyword
+- framework
+- prototyping
+- promise
+- dounce vs throtle
+- [refer this video](https://youtu.be/tOo9c6SK_do)
 
-## || Day02 || ||
-
-## || Day02 || ||
-
-## || Day02 || ||
