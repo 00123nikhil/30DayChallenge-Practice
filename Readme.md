@@ -16,7 +16,9 @@
 ## || Day02 || ||
 
 ## || Day03 || javascript Interview questions tips ||
-#### Important concept that asked in js 
+
+#### Important concept that asked in js
+
 - set Time out
 - placement of js files
 - var let and const difference
@@ -29,3 +31,6 @@
 - dounce vs throtle
 - [refer this video](https://youtu.be/tOo9c6SK_do)
 
+## || Day05 || ||
+
+The rest operator in JavaScript is denoted by three dots (...). It is used within function declarations or function expressions to represent an indefinite number of arguments as an array. The rest operator allows you to gather the remaining parameters of a function into a single array, which can then be manipulated or iterated over.
