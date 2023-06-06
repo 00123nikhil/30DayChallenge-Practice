@@ -121,16 +121,28 @@ console.log(all);
 
 
 // objects
-const tables = {
-    id: 001,
-    mail: 'demo001@gmail.com',
+// const tables = {
+//     id: 001,
+//     mail: 'demo001@gmail.com',
 
-    id: 002,
-    mail: 'demo001@gmail.com',
+//     id: 002,
+//     mail: 'demo001@gmail.com',
 
-    id: 003,
-    mail: 'demo001@gmail.com',
+//     id: 003,
+//     mail: 'demo001@gmail.com',
 
-    id: 004,
-    mail: 'demo001@gmail.com',
+//     id: 004,
+//     mail: 'demo001@gmail.com',
+// }
+
+// ||---------------------------||
+
+// Modules
+export function square(x) {
+    return x * x;
 }
+
+export const cube = (x) => {
+    return x * x * x;
+}
+

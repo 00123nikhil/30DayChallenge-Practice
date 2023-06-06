@@ -34,3 +34,8 @@
 ## || Day05 || ||
 
 The rest operator in JavaScript is denoted by three dots (...). It is used within function declarations or function expressions to represent an indefinite number of arguments as an array. The rest operator allows you to gather the remaining parameters of a function into a single array, which can then be manipulated or iterated over.
+
+
+### Modules in Js
+- A module in JavaScript is a self-contained unit of code that can be imported and used by other modules. Modules are used to break down large JavaScript applications into smaller, more manageable pieces. This makes code easier to understand, maintain, and test.
+- 
