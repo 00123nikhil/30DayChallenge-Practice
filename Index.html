@@ -9,7 +9,7 @@
     <style>
         body {
             background-color: rgb(34, 29, 29);
-            color: rgb(23, 215, 45);
+            color: rgb(215, 23, 97);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
@@ -20,6 +20,61 @@
             border: 2px solid white;
             background-color: black;
         }
+
+        #show {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: black;
+        }
+
+        label {
+            display: inline-block;
+            padding: 20px;
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        /* calculate css */
+        .calculate {
+            margin: 10px;
+            border: 2px solid red;
+            padding: 20px;
+            display: inline-block;
+            background-color: rgb(19, 16, 16);
+            border-radius: 5px;
+        }
+
+        .calculate h3 {
+            text-align: center;
+        }
+
+        .calculate input {
+            padding: 10px;
+            background-color: rgb(46, 41, 41);
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .calculate select {
+            padding: 10px;
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 40px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(4, 211, 4);
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+        }
     </style>
 </head>
 
@@ -28,10 +83,32 @@
     <div>
         <h3>Javascript Cheatsheet</h3>
         <a href="https://github.com/mbeaudru/modern-js-cheatsheet" target="_blank"></a>
-
+    </div>
+    <!-- Document object Modules(DOM) -->
+    <div class="container">
+        <h3>Opeators</h3>
+        <label for="">Display Board</label>
+        <label id="show"> loading...</label>
     </div>
 
-    <script type="module" src="./Day06.js""></script>
+    <!-- Calculate -->
+    <div class="calculate">
+        <h3>CALCULATE</h3>
+        <input type="number" name="first" id="first">
+        <select name="operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" name="second" id="second">
+        <br>
+        <button onclick="calculate()">calculate</button>
+        <input type="text" name="" id="result" placeholder="Result">
+    </div>
+
+    <!-- <script type="module" src="./Day06.js""></script> -->
+    <script src=" ./Day07.js""></script>
 </body>
 
 </html>
