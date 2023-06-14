@@ -1,0 +1,74 @@
+{
+  "userdata": [
+    {
+      "name": "John Doe",
+      "age": 30,
+      "email": "johndoe@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001"
+      },
+      "phoneNumbers": [
+        {
+          "type": "home",
+          "number": "555-1234"
+        },
+        {
+          "type": "work",
+          "number": "555-5678"
+        }
+      ],
+      "isActive": true
+    }
+  ],
+  "ProductData": [
+    {
+      "id": "p1234",
+      "name": "iPhone 12",
+      "brand": "Apple",
+      "price": 999.99,
+      "description": "The latest iPhone model with advanced features.",
+      "colors": ["silver", "black", "blue"],
+      "specs": {
+        "display": "6.1 inches",
+        "processor": "A14 Bionic",
+        "storage": "64GB",
+        "camera": "12 MP dual-camera"
+      }
+    }
+  ],
+  "TodoList": [
+    {
+      "userId": 1,
+      "listName": "Work Tasks",
+      "tasks": [
+        {
+          "id": 1,
+          "title": "Finish report",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "title": "Schedule meeting",
+          "completed": true
+        },
+        {
+          "id": 3,
+          "title": "Prepare presentation",
+          "completed": false
+        }
+      ]
+    }
+  ],
+  "MovieData": {
+    "title": "Inception",
+    "releaseYear": 2010,
+    "director": "Christopher Nolan",
+    "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
+    "genre": "Sci-Fi",
+    "rating": 8.8,
+    "plot": "A thief with the ability to enter people's dreams is tasked with planting an idea into a CEO's mind."
+  }
+}
