@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 22</title>
+  </head>
+  <body>
+    <!-- <script>
+      // 70
+      for (let i = 1; i < 5; i++) {
+        if (i === 3) continue;
+        console.log(i);
+      }
+    </script> -->
+
+    <!-- <script>
+      // 71
+      const foo = () => console.log("first");
+      const boo = () =>
+        setTimeout(() => {
+          console.log("second");
+        });
+      const loo = () => console.log("third");
+      foo();
+      boo();
+      loo();
+    </script> -->
+
+    <div>
+      <!-- 72 -->
+      <div onclick="alert('1st')">
+        <div onclick="alert('2nd')">
+          <div onclick="alert('3rd')">
+            <button>click</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+      // 73
+      const person = {
+        name: "bodi",
+      };
+      function sayHi() {
+        return `${this.name} is ${age}`;
+      }
+      console.log(sayHi.call(person, 23));
+      console.log(sayHi.bind(person, 33));
+    </script> -->
+
+    <!-- <script>
+      // 74
+      function sayHi() {
+        return (() => 0)();
+      }
+      console.log(typeof sayHi());
+    </script> -->
+
+    <!-- <script>
+      // 75
+      function sayHi() {
+        return () => 0;
+      }
+      console.log(typeof sayHi());
+    </script> -->
+
+    <!-- <script>
+      // 76
+      console.log(typeof typeof 1);
+
+      //   77
+      const arr = [1, 2, 3];
+      arr[5]=9;
+      console.log(arr);
+    </script> -->
+
+    <!-- <script>
+      // 78
+      const arr = [1, 2, 3];
+      arr[5] = arr;
+      console.log(arr);
+    </script> -->
+
+    <!-- <script>
+      // 79
+      // everything is js is either a..
+      // a.primitive or object
+      // b.function or object
+      // c.only object
+      // d.number or object
+    </script> -->
+
+    <!-- <script>
+      // 80
+      console.log(!!null);
+      console.log(!!"");
+      console.log(!!1);
+    </script> -->
+
+    <!-- <script>
+      // 81
+      console.log(setInterval(() => console.log("hi"), 1000));
+      console.log(setInterval(() => console.log("hi"), 1000));
+      console.log(setInterval(() => console.log("hi"), 1000));
+    </script> -->
+
+    <!-- <script>
+      // 82
+      console.log([..."Great"]);
+    </script> -->
+
+    <!-- <script>
+      // 83
+      const firstPromise = new Promise((res, rej) => {
+        setTimeout(res, 500, "one");
+      });
+      const secondPromise = new Promise((res, rej) => {
+        setTimeout(res, 100, "one");
+      });
+      Promise.race([firstPromise, secondPromise]).then((res) =>
+        console.log(res)
+      );
+    </script> -->
+
+    <!-- <script>
+      // 84
+      let person = { name: "tyler locke" };
+      const member = [person];
+      person = null;
+      console.log(member);
+    </script> -->
+
+    <!-- <script>
+      // 85
+      const person = {
+        name: "batman",
+        age: 46,
+      };
+      for (const item in person) {
+        console.log(item);
+      }
+    </script> -->
+
+    <!-- <script>
+      // 86
+      let ad = 3 + 4 + "5";
+      console.log(typeof ad);
+
+      // 87
+      let data = 4 + 5 + "7";
+      console.log(typeof 4 + 5 + "7");
+
+      // 88
+      console.log(typeof (3 + 4 + +"5"));
+    </script> -->
+
+    <!-- <script>
+      // 89
+      let data = [1, 2, 3].map((num) => {
+        if (typeof num === "number") return;
+        return num * 2;
+      });
+      console.log(data);
+    </script> -->
+
+    <!-- <script>
+      // 90
+      function getInfo(member) {
+        member.name = "joe tribuyani";
+      }
+      const person = { name: "chandler" };
+
+      getInfo(person);
+      console.log(person);
+    </script> -->
+
+    <!-- <script>
+      // 91
+      function car() {
+        this.make = "tata";
+        return { make: "kia" };
+      }
+      const myCar = new car();
+      console.log(myCar.make);
+    </script> -->
+
+    <!-- <script>
+      // 92
+      (() => {
+        let x = (y = 10);
+      })();
+      console.log(typeof x);
+    </script> -->
+
+    <!-- <script>
+      // 93
+      (() => {
+        let x = (y = 10);
+      })();
+      console.log(typeof y);
+    </script> -->
+
+    <!-- <script>
+      // 94
+      (() => {
+        let x = 90;
+      })();
+
+      (() => {
+        let x = 90;
+      })();
+
+      console.log(typeof x);
+    </script> -->
+
+    <!-- <script>
+      // 95
+      () => {
+        let x = (y = 10);
+      };
+
+      (() => {
+        let x = (y = 20);
+      })();
+
+      console.log(y);
+    </script> -->
+
+    <!-- <script>
+      // 96
+      let x = 100(() => {
+        var x = 40;
+      })();
+      console.log(x);
+    </script> -->
+
+    <!-- <script>
+      // 97
+      console.log(!true - true);
+    </script> -->
+
+    <!-- <script>
+      // 98
+      console.log(true + +"10");
+    </script> -->
+  </body>
+</html>
