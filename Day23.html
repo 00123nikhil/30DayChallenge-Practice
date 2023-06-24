@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAy 23</title>
+    <style>
+      body {
+        background-color: black;
+        color: burlywood;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Javascript</h2>
+    <li>Lexical Scope</li>
+    <!-- <script>
+      //  lexical scope
+      var username = "do epic shit!";
+      function callMe() {
+        console.log(username);
+      }
+      callMe();
+    </script> -->
+
+    <li>Closures</li>
+    <!-- <script>
+      // closure in js
+      function newOne() {
+        var name = "Do epic shit....";
+        // inner scope2
+        function newTwo() {
+          console.log("this is 2nd scope...", name);
+        }
+        newTwo();
+      }
+      newOne();
+    </script> -->
+
+    <!-- <script>
+      function newOne() {
+        var name = "Do epic shit....";
+        // inner scope2
+        function newTwo(val) {
+          console.log(name, val);
+        }
+        return newTwo;
+      }
+
+      newOne();
+      //newOne()();
+      newOne()(45);
+    </script> -->
+
+    <li>Closures scope chain</li>
+    <!-- <script>
+      var e = 4;
+      function sum(a) {
+        return function (b) {
+          return function (c) {
+            return function (d) {
+              // local scope
+              return a + b + c + d + e;
+            };
+          };
+        };
+      }
+
+      console.log(sum(3)(4)(2)(5));
+    </script> -->
+
+    <div>
+      <h3>Questions</h3>
+      <li>1</li>
+      <!-- <script>
+        let count = 0;
+
+        (function printCount() {
+          if (count == 0) {
+            let count = 1; //shadowing
+            console.log(count); //1
+          }
+          //   count=0
+          console.log(count);
+        })();
+      </script> -->
+
+      <li>2</li>
+      <!-- <script>
+        // write a function that allow to do this.
+        var addSix = createBase(6);
+        addSix(10);
+        addSix(32);
+      </script> -->
+
+      <!-- <script>
+        console.log("11" + 1); //111
+      </script> -->
+
+      <li>3 use of slice</li>
+      <!-- <script>
+        const number = [1, 2, 3, 4];
+        const result = number.slice(2);
+        console.log(result);
+      </script> -->
+
+      <li>4 Time Optimization</li>
+      <!-- <script>
+        // Time Optimization
+        function find(index) {
+          let a = [];
+          for (let i = 0; i < 1000000; i++) {
+            a[i] = i * i;
+          }
+          console.log(a[index]);
+        }
+        console.log("6");
+        find(6);
+        console.timeEnd("6");
+        find(12);
+        console.timeEnd("12");
+
+        // please refer the ...
+      </script> -->
+
+      <li>5 setTimeout Output</li>
+      <!-- <script>
+        function a() {
+          for (var i = 0; i < 3; i++) {
+            setTimeout(function log() {
+              console.log(i);
+            }, i * 1000);
+          }
+        }
+
+        a();
+      </script> -->
+    </div>
+  </body>
+</html>
