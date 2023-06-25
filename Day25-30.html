@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 25-30 combination code</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: greenyellow;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h3{
+      background-color: rgb(62, 58, 58);
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    div {
+      border: 2px solid white;
+      height: 150px;
+      width: 300px;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <h3>Javascript challenge 25-30 Day combo</h3>
+
+    <div>
+      <li>Javascript challenge Day 25</li>
+      <script>
+        let x = () => {
+          let y = 4;
+          return () => y;
+        };
+        console.log(x()());
+      </script>
+
+      <script>
+        /* Select the element by using following way.... */
+
+        // getelementById
+        /*  const A = document.getElementById('heading');
+         console.log(A); */
+
+        // getElementByTagName
+        /* const A = document.getElementsByTagName('h2');
+        console.log(A);//show htmlcollection in console.
+        console.log(A[0]); */
+
+        // getElementByClassName
+        /* const A = document.getElementsByClassName('heading');
+        console.log(A);
+        console.log(A[0]); */
+
+        // QuerySelector --> select by classname or id selector
+        /* const A = document.querySelector('#heading');
+        const B = document.querySelector('.heading');
+        console.log(A);
+        console.log(B); */
+
+        // QuerySelectorAll --> return htmlcollection or nodelist form
+        /* const A = document.querySelectorAll('.heading');
+        console.log(A); */
+
+        /* ------------------------------- */
+        // Traverse DOM
+        // 1.ParentNode
+        /* const Child = document.querySelector('.Child');
+        const parent = Child.parentNode;
+        console.log(parent); */
+
+        // 2.ChildNodes
+        /* const parent = document.querySelector('.parent');
+        console.log(parent.childNodes); */
+
+        // 3.NextElementSibling
+        /* const A = document.querySelector('.Child');
+        console.log(A.nextElementSibling); */
+
+        // 4.previousElementSibling
+        /* const A = document.querySelector('h3');
+        console.log(A.previousElementSibling); */
+
+        /*         // Manipulation
+                const A = document.querySelector('#heading');
+                // A.innerHTML = 'Tu barbad aahe';
+                A.style.color = 'red';
+                A.style.fontSize = '50px'
+                // if you want to add or remove class
+                A.classList.add('Title');
+                // A.classList.remove('heading'); not working you are accessing id */
+
+        // creating or adding elements in html
+        // create an element first
+        /* const A = document.createElement('h1');
+        // 2.add some text in your element
+        A.innerHTML = 'we are developer';
+        // 3.select the element
+        const add = document.querySelector('.add');
+        // 4.Add or append the element in html
+        add.appendChild(A);
+        console.log(A); */
+
+        /* const h4heading = document.createElement('h4');
+        h4heading.innerHTML = 'I am anothe one!';
+        const AddH4heading = document.querySelector('.add');
+        AddH4heading.insertAdjacentElement('beforebegin', h4heading)
+        console.log(AddH4heading); */
+
+        // ()--> parenthisis  []-->brackets {} braces or curly braces
+
+        // const sum = (a,b) => {
+        //     console.log(a + b);
+        // }
+
+        // console.log(sum(2, 3));
+      </script>
+
+      <li>Javascript challenge Day 26</li>
+    </div>
+  </body>
+</html>
