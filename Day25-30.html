@@ -11,7 +11,7 @@
       color: greenyellow;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
-    h3{
+    h3 {
       background-color: rgb(62, 58, 58);
       display: inline-block;
       padding: 10px;
@@ -120,6 +120,94 @@
       </script>
 
       <li>Javascript challenge Day 26</li>
+      <!-- <script>
+        var developers = ["hello", "meet", "me"];
+        developers.forEach(function (developer) {
+          console.log(developer.toUpperCase());
+        });
+
+        let a = "2" - "2" - "2" + "2";
+        console.log(a); //-22
+
+        // what is output
+        const x1 = null == undefined;
+        console.log(x1); //true
+
+        let n = [1, 2, 3];
+        let s = n.map((x) => x ** x);
+        console.log(s); // [1,4,27]
+
+        // function declarartion , function statement, function defination
+        function sum(a, b) {
+          return a + b;
+        }
+
+        // Function expressions are assigned to a variable
+        const square = function (num) {
+          return num * num;
+        };
+
+        // what is first class function
+        function gumsum(gum) {
+          return gum - gum;
+        }
+
+        function displaygum(fun) {
+          console.log("the subtraction is " + fun(4));
+        }
+
+        displaygum(gumsum);
+
+        // IIFE
+        (function multi(a) {
+          console.log(a * a);
+        })(5);
+
+        // another IIFE by asked inter.
+        (function sum(a) {
+          // closure is coming
+          return (function (y) {
+            console.log(a);
+          })(4);
+        })(3);
+      </script> -->
+
+      <script>
+        // function Scope
+        var a = 2,
+          b = 5,
+          name = "momo wale bhaiya,Jara chatani do";
+
+        function multiply() {
+          console.log(a * b);
+        }
+        multiply();
+
+        function addition(a, b) {
+          //parameters
+          var a = 45,
+            b = 98;
+        }
+        function NowAdd() {
+          console.log(name + " " + a * b);
+        }
+        NowAdd();
+
+        // function hoisting
+        displyName();
+
+        function displyName() {
+          console.log("Function Hoisting ........");
+        }
+
+        // function hoisting  -output based
+        var c = 9;
+        var fun = function () {
+          console.log(c);
+          var c = 34;
+        };
+        fun(); //whatever passing is an argument
+      </script>
     </div>
   </body>
 </html>
