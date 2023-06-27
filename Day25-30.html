@@ -172,7 +172,7 @@
         })(3);
       </script> -->
 
-      <script>
+      <!-- <script>
         // function Scope
         var a = 2,
           b = 5,
@@ -207,7 +207,94 @@
           var c = 34;
         };
         fun(); //whatever passing is an argument
+      </script> -->
+
+      <li>Javascript challenge Day 27</li>
+      <!-- <script>
+        // function in js
+        // param vs argu
+        function multiply(a, b) {
+          console.log(a * b);
+        }
+        multiply(5,6);
+      </script> -->
+      <!-- <script>
+        function Maltiply(...a) {
+          console.log(a[0] * a[1]);
+        }
+
+        var arr = [4, 6];
+        // using spread
+        Maltiply(...arr);
+      </script> -->
+
+      <!-- <script>
+        // intQue
+        // const fn=(a,x,...numbers,z)=>console.log(x,y,numbers);
+        const fn = (a, x, z, ...numbers) => console.log(a, x, z, numbers);
+
+        fn(4, 5, 6, 7, 8, 9, 10);
+      </script> -->
+
+      <!-- <script>
+        // this keyword
+        let user = {
+          username: "do epic shit!",
+          u1: () => {
+            console.log("this function is", this.username);
+          },
+          u2: function () {
+            console.log("this function is run ", this.username);
+          },
+        };
+        user.u1(); // arrow point to globol
+        user.u2();
+      </script> -->
+
+      <!-- <script>
+        // map vs foreach
+        const arr = [2, 3, 4, 5, 6];
+        const mapResult = arr.map((ar) => {
+          return ar;
+          // not modified original
+        });
+
+        const foreachResult = arr.forEach((ar, i) => {
+          // now its modified original
+          arr[i] = ar + 3;
+        });
+
+        console.log("map result is ", mapResult);
+        console.log("foreach result is ", foreachResult,arr);
+        console.log("foreach never return  ");
+      </script> -->
+
+      <script>
+        // return only name of student in capital
+        let students = [
+          { name: "niks", id: 1001, marks: 86 },
+          { name: "alex", id: 1002, marks: 86 },
+          { name: "will", id: 1003, marks: 50 },
+          { name: "dean", id: 1004, marks: 24 },
+        ];
+
+        // using traditional for
+        // let names = [];
+        // for (let i = 0; i < students.length; i++) {
+        //   names.push(students[i].name.toUpperCase());
+        // }
+
+        const names = students.map((stu) => stu.name.toUpperCase());
+        console.log(names);
+
+        // return only those who scored more than 60 marks
+        const HighScore = students.filter((stu) => stu.marks > 60);
+        console.log("More than 60 marks of Students are : ", HighScore);
       </script>
+
+      <!-- <li>Javascript challenge Day 28</li>
+      <li>Javascript challenge Day 29</li>
+      <li>Javascript challenge Day 30</li> -->
     </div>
   </body>
 </html>
