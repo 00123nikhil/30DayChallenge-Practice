@@ -269,7 +269,7 @@
         console.log("foreach never return  ");
       </script> -->
 
-      <script>
+      <!-- <script>
         // return only name of student in capital
         let students = [
           { name: "niks", id: 1001, marks: 86 },
@@ -290,10 +290,120 @@
         // return only those who scored more than 60 marks
         const HighScore = students.filter((stu) => stu.marks > 60);
         console.log("More than 60 marks of Students are : ", HighScore);
-      </script>
+      </script> -->
 
-      <!-- <li>Javascript challenge Day 28</li>
-      <li>Javascript challenge Day 29</li>
+      <li>Javascript challenge Day 28</li>
+      <!-- <script>
+        //objects
+        const user = {
+          name: "goodsideer post",
+          age: 45,
+          "good things": true,
+        };
+
+        console.log(user["good things"]);
+
+        // dynamically adding object property
+        const property = "firstname";
+        const name1 = "ajex solti";
+
+        const user1 = {
+          ["property"]: name1,
+        };
+        console.log(user1.firstname);
+      </script> -->
+
+      <!-- <script>
+        // print keys and values
+        const user = {
+          name: "lala ki",
+          age: 85,
+          isTotallyAwosome: true,
+        };
+
+        for (key in user) {
+          // print keys
+          console.log("objects of keys :: ", key);
+          // values
+          console.log("values :: ", user[key]);
+        }
+
+        // 03
+        const obj = {
+          a: "one",
+          b: "two",
+          a: "three",
+        };
+        console.log(obj);
+      </script> -->
+
+      <!-- <script>
+        let nums = {
+          a: 200,
+          b: 822,
+          title: "my nums",
+        };
+
+        multipyByTwo(nums);
+
+        function multipyByTwo(obj) {
+          for (key in obj) {
+            if (typeof obj[key] === "number") {
+              obj[key] *= 2;
+            }
+          }
+        }
+        console.log(nums);
+      </script> -->
+
+      <!-- 
+      <script>
+        // Important-----
+        // what is output of following
+        const a = {};
+        const b = { key: "b" };
+        const c = { key: "c" };
+
+        a[b] = 123;
+        a[c] = 456;
+        console.log(a[b]);
+      </script> -->
+
+      <!-- <script>
+        // nested object destructure
+        let user = {
+          name: "Nikhil",
+          age: 24,
+          fav: {
+            movies: "Extraction 2",
+            series: "Stranger things",
+          },
+        };
+
+        const {
+          fav: { movies },
+        } = user;
+        console.log(movies);
+      </script> -->
+
+      <!-- <script>
+        function getItem(fruitList, favouriteList, ...args) {
+          return [...fruitList, ...args, favouriteList];
+        }
+
+        console.log(getItem(["banana", "apple"], "gauva", "jackfruit"));
+      </script> -->
+
+      <!-- <script>
+        let a = { greeting: "tack thais to you suraj" };
+        let d;
+
+        d = a;
+        a.greeting = "hello";
+        console.log(d.greeting);
+      </script> -->
+
+      <!-- <li>Javascript challenge Day 29</li>
       <li>Javascript challenge Day 30</li> -->
     </div>
   </body>
