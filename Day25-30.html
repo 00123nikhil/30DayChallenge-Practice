@@ -172,7 +172,7 @@
         })(3);
       </script> -->
 
-      <!-- <script>
+      <script>
         // function Scope
         var a = 2,
           b = 5,
@@ -207,7 +207,7 @@
           var c = 34;
         };
         fun(); //whatever passing is an argument
-      </script> -->
+      </script>
 
       <li>Javascript challenge Day 27</li>
       <!-- <script>
@@ -403,8 +403,138 @@
         console.log(d.greeting);
       </script> -->
 
-      <!-- <li>Javascript challenge Day 29</li>
-      <li>Javascript challenge Day 30</li> -->
+      <li>Javascript challenge Day 29</li>
+      <!-- <script>
+        // what is output
+        console.log({ a: 1 } == { a: 1 }); //false
+        console.log({ a: 1 } === { a: 1 }); //false
+      </script> -->
+
+      <!-- <script>
+        let person = { name: "kenya" };
+        const members = [person];
+        // person = null;
+        // person.name=null
+        console.log(members);
+      </script> -->
+
+      <!-- <script>
+        const value = { number: 10 };
+
+        const multiply = (x = { ...value }) => {
+          console.log((x.number *= 2));
+        };
+        multiply(); //10
+        multiply(); //20
+        multiply(value); //20
+        multiply(value); //40
+      </script> -->
+
+      <!-- <script>
+        function ChangeAgeandReference(person) {
+          person.age = 23;
+          person = {
+            name: "rachal green",
+            age: 44,
+          };
+          return person;
+        }
+        const personObj = {
+          name: "alex",
+          age: 30,
+        };
+
+        const personObj2 = ChangeAgeandReference(personObj);
+
+        console.log(personObj);
+        console.log(personObj2);
+      </script> -->
+
+      <!-- <script>
+        // how to deep copy/clone object?
+        let user = {
+          name: "john wick",
+          age: 45,
+        };
+
+        // method 1
+        const objeclone = Object.assign({}, user);
+
+        // if you trying to change propety
+        objeclone.name = "aayansh";
+
+        // method 2
+        // const objeclone = JSON.parse(JSON.stringify(user));
+        // objeclone.name = "goodreader";
+
+        // method 3
+        // const objeclone = { ...user };
+        // objeclone.name = "priyansh";
+
+        console.log(user, objeclone);
+      </script> -->
+
+      <!-- <script>
+        // this
+        this.a = 5;
+        function getParam() {
+          console.log(this.a); // refer window object
+        }
+
+        getParam();
+
+        const user = {
+          name: "Nikhil",
+          id: 33233,
+          getDetails() {
+            console.log(this.name); // refer the parent user only.
+          },
+        };
+        user.getDetails();
+
+        // way three
+        const user2 = {
+          name: "alice",
+          id: 2343,
+          childObj: {
+            newname: "berotala",
+            getDetails() {
+              console.log(this.newname, "and", this.name);
+            },
+          },
+        };
+
+        user2.childObj.getDetails()
+      </script> -->
+
+      <!-- <script>
+        class good {
+          constructor(n) {
+            this.name = n;
+          }
+
+          getName() {
+            console.log(this.name);
+          }
+        }
+        const newName = new good("Nikhil");
+        console.log(newName);
+        newName.getName();
+      </script> -->
+
+      <script>
+        const user = {
+          firstname: "Nik",
+          getName() {
+            const firstname = "Niklas";
+            return this.firstname;
+          },
+        };
+
+        console.log(user.getName());
+      </script>
+
+      <!-- <li>Javascript challenge Day 30</li> -->
     </div>
   </body>
 </html>
