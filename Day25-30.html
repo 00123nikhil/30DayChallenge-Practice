@@ -522,7 +522,7 @@
         newName.getName();
       </script> -->
 
-      <script>
+      <!-- <script>
         const user = {
           firstname: "Nik",
           getName() {
@@ -532,9 +532,177 @@
         };
 
         console.log(user.getName());
-      </script>
+      </script> -->
 
-      <!-- <li>Javascript challenge Day 30</li> -->
+      <li>Javascript challenge Day 30</li>
+      <!-- <script>
+        const user = {
+          name: "Nikhil",
+          logmessage() {
+            console.log(this.name);
+          },
+        };
+
+        setTimeout(() => {
+          user.logmessage();
+        }, 1000); //nikhil
+      </script> -->
+
+      <!-- <script>
+        // create an object calculator
+        let calculator = {
+          read() {
+            this.a = +prompt("Enter value of a", 0);
+            this.b = +prompt("Enter value of b", 0);
+          },
+          sum() {
+            return this.a + this.b;
+          },
+          mul() {
+            return this.a * this.b;
+          },
+        };
+        calculator.read();
+        console.log("Addition is", calculator.sum());
+        console.log("Multiplication is", calculator.mul());
+      </script> -->
+
+      <!-- <script>
+        // creating a promise
+        const ticket = new Promise(function (resolve, reject) {
+          const isboarded = true;
+          if (isboarded) {
+            resolve("You are in flight");
+          } else {
+            reject("Your flight has been cancalled.");
+          }
+        });
+
+        // calling the promise
+        ticket
+          .then((data) => {
+            console.log("welcome!", data);
+          })
+          .catch((data) => {
+            console.log("we are sorry!", data);
+          })
+          .finally(() => {
+            console.log("AirIndia Flight Pvt Ltd");
+          });
+      </script> -->
+
+      <!-- <script>
+        let numbers = [1, 2, 3, 44, 65, 7, 8, 89];
+        let arr = numbers.filter((val) => val > 10);
+        console.log(arr);
+
+        let DevTeam = [
+          {
+            name: "Nikhil",
+            position: "Android Developer",
+          },
+          {
+            name: "Suraj",
+            position: "FrontEnd Developer",
+          },
+          {
+            name: "mandar",
+            position: "backend Developer",
+          },
+          {
+            name: "shubh",
+            position: "Asur Developer",
+          },
+        ];
+
+        let Android_Dev = DevTeam.filter(
+          (val) => val.position == "Android Developer"
+        );
+        console.log(Android_Dev);
+      </script> -->
+
+      <!-- <script>
+        class NameTakers {
+          constructor(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+          }
+
+          get fullname() {
+            return this.firstname + "" + this.lastname;
+          }
+
+          set fullname(_fullname) {
+            this.firstname = _fullname;
+            this.lastname = _fullname;
+          }
+        }
+
+        let person1 = new NameTakers("john", "willams");
+        person1.fullname;
+        person1.fullname = "Akes  tuturani";
+
+        console.log(person1);
+      </script> -->
+
+      <!-- <script>
+        function Iphone() {
+          const details = {
+            price: 1500000,
+            Model: "Iphone 14",
+          };
+          console.log(details);
+        }
+
+        function Android() {
+          const details = {
+            price: 1500000,
+            Model: "Samsung S22 ",
+          };
+          console.log(details);
+        }
+
+        function PhoneDetails(Category, callback) {
+          console.log("Category", Category);
+          callback();
+        }
+        let a1 = PhoneDetails("android", Android);
+        console.log(a1);
+
+        let b1 = PhoneDetails("Iphone", Iphone);
+        console.log(b1);
+
+        const notification = () => console.log("You got new Notification");
+        const voiceMessage = () => console.log("You have 1 voice message");
+
+        function MyPhone(Msg) {
+          Msg();
+        }
+
+        MyPhone(notification);
+        MyPhone(voiceMessage);
+      </script> -->
+
+      <!-- <script>
+        const calculate = (x, y, operation) => {
+          return operation(x, y);
+        };
+
+        // calling function
+        const multiplication = calculate(4, 6, function (num1, num2) {
+          return num1 * num2;
+        });
+        const addtion = calculate(1, 2, function (num1, num2) {
+          return num1 + num2;
+        });
+
+        console.log(multiplication);
+        console.log(addtion);
+
+        const substraction = (s, z) => s - z;
+        const substractionResult = calculate(34, 10, substraction);
+        console.log(substractionResult);
+      </script> -->
     </div>
   </body>
 </html>
