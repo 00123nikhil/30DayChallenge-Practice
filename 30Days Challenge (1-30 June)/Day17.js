@@ -31,7 +31,7 @@ console.log(Person);
  */
 let shallowCopy = Object.assign({}, AddressObject);
 // shallowCopy.city = "Napur";
-// console.log(shallowCopy, AddressObject);
+console.log(shallowCopy, AddressObject);
 
 let s_Copy = Object.assign({}, Person);
 console.log(s_Copy);
@@ -44,6 +44,9 @@ const person1 = {
   address: {
     city: "Cha.Sambhaji Nagar",
     state: "MH",
+    rulae:{
+
+    }
   },
 };
 // using spread
@@ -114,3 +117,12 @@ let x = {
 };
 let showMap = Object.entries(x);
 console.log(showMap);
+
+
+
+let a=[3,4,5]
+
+console.log(a);
+const [c,b]=a
+
+// arry destructing 

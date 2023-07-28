@@ -42,15 +42,15 @@ Object.defineProperties(fruitsList, {
 
 // ||-------------- classes -----------||
 // before es6 |construtor function
-// function User(name) {
-//   this.name = name;
-// }
+function User(name) {
+  this.name = name;
+}
 
-// User.prototype.sayHi = function () {
-//   return this.name;
-// };
-// let user = new user("John wick");
-// User.sayHi();
+User.prototype.sayHi = function () {
+  return this.name;
+};
+let user = new user("John wick");
+User.sayHi();
 
 // after | classes
 class User {
@@ -92,5 +92,4 @@ person1.fullname; //john cena
 person1.fullname = "nikhil Borse";
 
 console.log(person1);
-
 
