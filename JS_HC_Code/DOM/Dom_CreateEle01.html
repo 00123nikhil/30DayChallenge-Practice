@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM II</title>
+    <style>
+      body {
+        background-color: #110f0f;
+        color: #fff;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      h1 {
+        background-color: rgb(31, 29, 29);
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM | How to create new elements</h1>
+    <!-- ------------ -->
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+
+    <!-- jaavscript script started here... -->
+    <script>
+      console.log("--------- Section 1 ---------");
+      const parent = document.querySelector(".parent");
+      console.log(parent);
+      console.log(parent.children);
+      //   Accessing individual
+      console.log(parent.children[1]);
+      //   accessing their content
+      console.log(parent.children[1].innerHTML);
+
+      for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i].innerHTML);
+      }
+
+      //   change the styling
+      parent.children[1].style.color = "red";
+      parent.children[2].style.color = "green";
+      //   firstElementChildren
+      console.log(parent.firstElementChild);
+    </script>
+
+    <!-- script 2 ------------ -->
+    <script>
+      console.log("--------- [Section 2] ---------");
+      const Dayone = document.querySelector(".day");
+      console.log(Dayone);
+      //   parent Element
+      console.log("parentElement", Dayone.parentElement);
+      // nextElementSibling
+      console.log("nextElementSibling", Dayone.nextElementSibling);
+      //   childNode
+      console.log("Nodes : ", parent.childNodes);
+    </script>
+  </body>
+</html>
